@@ -1,1 +1,801 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shane Moon</title>
+
+    <link href="./public/stylesheets/application.css" rel="stylesheet" type="text/css" />
+    <link href="./public/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="./public/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="./public/stylesheets/grid.css" rel="stylesheet" type="text/css" />
+
+    <!--<%= yield(:head) %>-->
+
+    <meta name="google-site-verification" content="ycWr58a4P7vCythvW9h29o_SEmQR6SGHeXNrig9GHUY" />
+    <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" />
+    <script language="JavaScript" type="text/javascript" src="./public/javascripts/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./public/javascripts/jquery-ui.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./public/javascripts/jquery.youtubepopup.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./public/javascripts/ContentFlow/contentflow.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./public/javascripts/bibtex.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Shane (Seungwhan) Moon, Research Scientist at Facebook Conversational AI. PhD from Carnegie Mellon University.">
+    <meta name="keywords" content="Shane, Moon, Seungwhan, Shane Moon, Seungwhan Moon, 문승환, Facebook, CMU, Artificial Intelligence, Machine Learning, Deep Learning">
+    <meta name="author" content="Shane (Seungwhan) Moon">
+
+  <link href="./public/stylesheets/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="./public/javascripts/jquery.qtip.min.js"></script>
+  <!--<%= csrf_meta_tag %>-->
+
+  </head>
+  <body>
+    <header id='header'>
+      <div class="main">
+        <div class="border-top">
+          <div class="wrapper">
+            <h1><a href="/"> Shane Moon </a></h1>
+            <nav>
+              <ul class="menu">
+                <li id='li_about'><a href='/'>About</a></li>
+                <!--
+                <li id='li_work'><a href='<%=work_index_path%>'>Work</a></li>
+                <li id='li_projects'><a href='./archive.html'>Research & Projects</a></li>
+                -->
+                <!--<li id='li_music'><a href='./music.html'>Music</a></li>-->
+                <!--<li id='li_photography'><a href='<%=galleries_work_path%>'>Photography</a></li>-->
+                <li id='li_photography'><a href='https://wanderingmoons.studio'>Photography</a></li>
+                <!--<li id='li_travel'><a href='<%=galleries_path%>'>Travel</a></li>-->
+                <!--<li class='last-item' id='li_contacts'><a href='<%=contact_index_path%>'>Contacts</a></li>-->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id='map_holder'>
+
+    <div id="container">
+      <section id="content">
+        <div class="main">
+          <script>
+            document.getElementById('li_about').innerHTML = "<a class='active' href='/'>About</a>"
+          </script>
+
+          <script>
+          function open_bibtex(ref) {
+            $(function() {
+              $( "#bibtex_dialog" ).dialog({
+                resizable: false,
+                modal: true,
+                width: 'auto',
+                position: { my: "left top", at: "left top"}
+              });
+              $( "#bibtex_content").text( bibtex_entry[ref] );
+            });
+          }
+          </script>
+
+          <div class="slider-bg">
+            <div class="slider">
+              <div class="banner">
+                <p style="font-size: 1.5em; color: black">Shane Moon, PhD</p>
+                <p style="font-size: 1.2em; padding-top: 0px">
+                  Research Scientist </br>
+                  Facebook Conversational AI
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container_12">
+            <div class="wrapper p3">
+              <article class="grid_8">
+                <div class="indent-left">
+                  <p>
+                    I'm <b>Shane (Seungwhan) Moon</b>, and I am a Research Scientist at Facebook working on Conversational AI.
+                    Before that, I completed my PhD at Carnegie Mellon University (CMU) where I worked with Prof. <b><a class='link' href="https://www.cs.cmu.edu/~jgc/"> Jaime Carbonell</a></b> on <a class='link' href="https://shanemoon.s3.amazonaws.com/papers/thesis_final.pdf">Proactive Transfer Learning</a> and Multi-modal Learning with various applications in NLP and CV.
+                  </p>
+
+                  <p> Some of my non-academic pursuits include <a class="link" href="https://wanderingmoons.studio/">photography</a>, <a class="link" href="<%=musics_path %>">music</a>, cycling, etc.</p>
+
+                  <p>Email: <a class="link">me at shanemoon dot com</a></p>
+                </div>
+              </article>
+              <article class="grid_4">
+                <div class="indent-left indent-top">
+                  <h4 class="prev-indent-bot2">Quick Links</h4>
+                  <ul class="list-1">
+                    <li><a href="#work_experience">Work Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#awards">Awards and Honor</a></li>
+                    <li><a href="#miscellaneous">Miscellaneous</a></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+
+          <!-- ========================== Start of Work Expeirence ========================== -->
+
+          <div class="container_12" id='work_experience'>
+            <div class="wrapper">
+              <article class="grid_12">
+                <div class="indent-left">
+                  <h3 style="margin-bottom: 10px"> Work Experience </h3>
+                </div>
+              </article>
+            </div>
+
+            <aside>
+              <div class="wrapper" style="margin-top: 10px">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.facebook.com/careers/locations/seattle/"><img width=130 height=130 src="./public/images/facebook-logo.png" alt="facebook inc. logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Facebook</h3>
+                    <h4 class="color-1">2018 - Current, Seattle, WA</h4>
+                    <p>
+                      <b>Senior Research Scientist</b>
+                      </br>
+                      <b>Keywords:</b> Dialog Systems, Multimodal Learning, Knowledge Grounding and Transfer, Memory Networks
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://lti.cs.cmu.edu/"><img width=130 height=130 src="./public/images/cmu-logo.jpg" alt="carnegie mellon university logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Carnegie Mellon University</h3>
+                    <h4 class="color-1">2013 - 2018, Pittsburgh, PA</h4>
+                    <p>
+                      <b>Graduate Research Asisstant</b>
+                      </br>
+                      <b>Keywords:</b> Transfer Learning, Multi-modal Learning, Proactive Learning
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.facebook.com/careers/locations/seattle/"><img width=130 height=130 src="./public/images/facebook-logo.png" alt="facebook inc. logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Facebook</h3>
+                    <h4 class="color-1">Fall 2017, Seattle, WA</h4>
+                    <p>
+                      <b>PhD Intern</b>
+                      </br>
+                      <b>Keywords:</b> Deep Learning, Machine Learning
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.snap.com/en-US/"><img width=130 height=130 src="./public/images/snap-logo.png" alt="snap inc. logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Snapchat Research</h3>
+                    <h4 class="color-1">Summer 2017, Venice, CA</h4>
+                    <p>
+                      <b>Research intern</b>
+                      </br>
+                      <b>Keywords:</b> Natural Language Processing, Machine Learning
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2" >
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.disneyresearch.com/research-labs/disney-research-pittsburgh/"><img width=130 height=130 src="./public/images/disney-logo.jpg" alt="disney logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Disney Research</h3>
+                    <h4 class="color-1">Summer 2014, Pittsburgh, PA</h4>
+                    <p>
+                      <b>Research intern</b>, worked on the joint project on computer vision / natural language processing.
+                      </br>
+                      <b>Keywords:</b> Natural Language Processing, Computer Vision, Machine Learning
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.sait.samsung.co.kr/"><img width=130 height=130 src="./public/images/samsung-logo.jpg" alt="samsung logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Samsung Advanced Institue of Technology</h3>
+                    <h4 class="color-1">Summer 2013, Seoul, Korea</h4>
+                    <p>
+                      <b>Research intern</b>, worked on the Future IT Intelligence Computing group developing new natural language processing tools.
+                      </br>
+                      <b>Keywords:</b> Natural Language Processing, Machine Learning
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://qrclab.wordpress.com/"><img width=130 height=130 src="./public/images/qrc-logo.png" alt="qrc logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Quanta Research Cambridge</h3>
+                    <h4 class="color-1">Summer 2012, Cambridge, MA</h4>
+                    <p>
+                      <b>Research intern</b>, worked on the Natural Interaction team focused on developing new data-driven interfaces that incorporate multi-modal contents.
+                      </br>
+                      <b>Keywords:</b> Mobile/Web application development, Speech Recognition
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.microsoft.com"><img width=130 height=130 src="./public/images/microsoft-logo.png" alt="microsoft logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Microsoft</h3>
+                    <h4 class="color-1">Summer 2011, Redmond, WA</h4>
+                    <p>
+                      <b>Software developer intern</b>, worked on the Digital Memories Experience (DMX) team in Windows/Windows Live and owned two plugins for the backend engine that is consumed by Windows 8's new native photo application (demonstrated at the first Windows 8 preview conference (<a href="https://www.microsoft.com/en-us/build/">BUILD</a>) on September 13, 2011)
+                      </br>
+                      <b> Keywords:</b> C++, Optimization, Windows Programming
+                    </p>
+                </article>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="wrapper">
+                <article class="grid_2">
+                  <div class="indent-left">
+                    <figure class="p2"><a href="https://www.imec-int.com/en/about-us"><img width=130 height=130 src="./public/images/imec-logo.png" alt="imec logo"></a></figure>
+                  </div>
+                </article>
+                <article class="grid_10">
+                  <div class="indent-left indent-right">
+                    <h3>Imec</h3>
+                    <h4 class="color-1">Summer 2010, Leuven, Belgium</h4>
+                    <p>
+                      <b>Visiting scholar</b>, conducted experiments to interpret the brain wave signal from an <%= link_to "Electroencephalography (EEG)", "https://en.wikipedia.org/wiki/Electroencephalography" %> device and wrote a user-interactive program in Python. The <a href="https://nodebox.net/code/index.php/Home"> NodeBox</a> team continued this project with IMEC, and gave a <a href="https://www.flickr.com/photos/flandersdc/6359691709/in/set-72157627978831469/">final demonstration</a> at Creativity World Forum in Hasselt, Belgium.
+                      </br>
+                      <b> Keywords:</b> Python, Electroencephalography, Nodebox
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </aside>
+          </div>
+
+
+
+
+          <!-- ========================== Start of Publications ========================== -->
+
+          <div class="container_12" id='publications'>
+            <div class="wrapper">
+              <article class="grid_12">
+                <div class="indent-left">
+                  <h3 style="margin-bottom: 10px; margin-top: 20px"> Publications </h3>
+                </div>
+              </article>
+            </div>
+
+            <aside>
+              <div class="wrapper" style="margin-top: 10px">
+                <div class="indent-left indent-right">
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2012.15504">Continual Learning in Task-Oriented Dialogue Systems</a></b> </br>
+                    Andrea Madotto, Zhaojiang Lin, Zhenpeng Zhou, Seungwhan Moon, Paul Crook, Bing Liu, Zhou Yu, Eunjoon Cho, Zhiguang Wang</br>
+                    arXiv, 2020. </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/2012.15504">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Madotto+20')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2010.12757">Adding Chit-Chats to Enhance Task-Oriented Dialogues</a></b> </br>
+                    Kai Sun, Seungwhan Moon, Paul Crook, Stephen Roller, Becka Silvert, Bing Liu, Zhiguang Wang, Honglei Liu, Eunjoon Cho, Claire Cardie</br>
+                    arXiv, 2020. </br>
+                    (
+                    <a class='link' href="https://dataset.org/accentor/">Code & Data</a>,
+                    <a class='link' href="https://arxiv.org/pdf/2010.12757">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Sun+20')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2101.00151">DVD: A Diagnostic Dataset for Multi-step Reasoning in Video Grounded Dialogue</a></b> </br>
+                    Hung Le, Chinnadhurai Sankar, Seungwhan Moon, Ahmad Beirami, Alborz Geramifard, Satwik Kottur</br>
+                    arXiv, 2021. </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/2101.00151">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Le+21')">BibTeX</a>
+                    )
+                  </div>        
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2010.12758">NUANCED: Natural Utterance Annotation for Nuanced Conversation with Estimated Distributions</a></b> </br>
+                    Zhiyu Chen, Honglei Liu, Hu Xu, Seungwhan Moon, Hao Zhou, Bing Liu</br>
+                    arXiv, 2020. </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/2010.12758">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Chen+20')">BibTeX</a>
+                    )
+                  </div>        
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2006.01460">Situated and Interactive Multimodal Conversations</a></b> </br>
+                    Seungwhan Moon*, Satwik Kottur*, Paul A. Crook^, Ankita De^, Shivani Poddar^, Theodore Levin, David Whitney, Daniel Difranco, Ahmad Beirami, Eunjoon Cho, Rajen Subba, Alborz Geramifard </br>
+                    (*, ^: equal contributions) </br>
+                    COLING, 2020 (To Appear). </br>
+                    (
+                    <a class='link' href="https://dstc9.dstc.community/tracks">DSTC9 Challenge</a>,
+                    <a class='link' href="https://github.com/facebookresearch/simmc">SIMMC Track Page (Code, Dataset)</a>,
+                    <a class='link' href="https://arxiv.org/pdf/2006.01460.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+20a')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2005.00172">Information Seeking in the Spirit of Learning: a Dataset for Conversational Curiosity</a></b> </br>
+                    Pedro Rodriguez, Paul Crook, Seungwhan Moon, Zhiguang Wang </br>
+                    EMNLP, 2020 (To Appear). </br>
+                    (
+                    <a class='link' href="https://www.pedro.ai/static/publications/2020_emnlp_curiosity.paper.pdf">PDF</a>,
+                    <a class='link' href="https://github.com/facebookresearch/curiosity">Code & Data</a>,
+                    <a class='link' href="https://datasets.pedro.ai/dataset/curiosity">Dataset Viewer</a>,
+                    <a class='link' href="javascript:open_bibtex('Rodriguez+20')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/2006.00184">User Memory Reasoning for Conversational Recommendation</a></b> </br>
+                    Hu Xu, Seungwhan Moon, Honglei Liu, Bing Liu, Pararth Shah, Bing Liu, Philip S. Yu </br>
+                    COLING, 2020 (To Appear). </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/2006.00184.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Xu+20')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.aclweb.org/anthology/papers/P/P19/P19-1081/">OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs</a></b> </br>
+                    Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba </br>
+                    ACL, 2019 <b>(Best Paper Nomination)</b>. </br>
+                    (
+                    <a class='link' href="https://github.com/facebookresearch/opendialkg">GitHub</a>,
+                    <a class='link' href="https://www.aclweb.org/anthology/P19-1081">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+19a')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.aclweb.org/anthology/D19-3025/">Memory Grounded Conversational Reasoning</a></b> </br>
+                    Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba </br>
+                    EMNLP, 2019. </br>
+                    (
+                    <a class='link' href="https://www.aclweb.org/anthology/D19-3025.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+19c')">BibTeX</a>          )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.aclweb.org/anthology/K19-1068/">Memory Graph Networks for Explainable Memory-grounded Question Answering</a></b> </br>
+                    Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba </br>
+                    CoNLL, 2019. </br>
+                    (
+                    <a class='link' href="https://www.aclweb.org/anthology/K19-1068.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+19b')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/1909.12641">Active Federated Learning</a></b> </br>
+                    Jack Goetz, Kshitiz Malik, Duc Bui, Seungwhan Moon, Honglei Liu, Anuj Kumar </br>
+                    NeurIPS Workshop on Federated Learning, 2019. </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/1909.12641.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Goetz+19')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/1909.12535">Federated User Representation Learning</a></b> </br>
+                    Duc Bui, Kshitiz Malik, Jack Goetz, Honglei Liu, Seungwhan Moon, Anuj Kumar, Kang G. Shin </br>
+                    arXiv, 2019. </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/1909.12535.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Bui+19')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://aclanthology.info/papers/P18-1186/p18-1186">Zeroshot Multimodal Named Entity Disambiguation for Noisy Social Media Posts</a></b> </br>
+                    Seungwhan Moon, Leonardo Neves, Vitor Carvalho </br>
+                    ACL, 2018. </br>
+                    (
+                    <a class='link' href="https://aclweb.org/anthology/P18-1186">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+18b')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://aclanthology.info/papers/N18-1078/n18-1078">Multimodal Named Entity Recognition for Short Social Media Posts</a></b> </br>
+                    Seungwhan Moon, Leonardo Neves, Vitor Carvalho </br>
+                    NAACL, 2018. </br>
+                    (
+                    <a class='link' href="https://arxiv.org/pdf/1802.07862.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+18a')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://shanemoon.github.io/bib/papers/Moon+18c.pdf">Learn to Active Learn: Dynamic Active Learning with Attention-based Strategies Selection</a></b> </br>
+                    Seungwhan Moon, Jaime Carbonell </br>
+                    2018. </br>
+                    (
+                    <a class='link' href="https://shanemoon.s3.amazonaws.com/papers/DPAL.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+18c')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.ijcai.org/proceedings/2017/349">Completely Heterogeneous Transfer Learning with Attention - What And What Not To Transfer</a></b> </br>
+                    Seungwhan Moon, Jaime Carbonell </br>
+                    IJCAI, 2017. </br>
+                    (
+                    <a class='link' href="https://www.ijcai.org/proceedings/2017/0349.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+17a')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="http://eudl.eu/doi/10.4108/eai.22-3-2017.152417">This Malware Looks Familiar: Laymen Identify Malware Run-time Similarity with Chernoff faces and Stick Figures</a></b> </br>
+                    Eliezer Kanal, Nathan VanHoudnos, Will Casey, David French, Brian Lindauer, Seungwhan Moon, Peter Jansen, Jamie Carbonell, Evan Wright</br>
+                    EAI, 2017. </br>
+                    (
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/VanHoudnos%2B17.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('VanHoudnos+17')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://link.springer.com/chapter/10.1007%2F978-3-319-46227-1_44">Proactive Transfer Learning with Heterogeneous Feature and Label Spaces</a></b> </br>
+                    Seungwhan Moon, Jaime Carbonell </br>
+                    ECML-PKDD, 2016. </br>
+                    (
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B16a_ECMLPKDD_cemra_ready.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+16a')">BibTeX</a>,
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B16a_ECMLPKDD_poster.pdf">Poster</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://aclanthology.info/papers/P16-1021/p16-1021">Metaphor Detection Using Topic Transition, Emotion and Cognition in Context</a></b> </br>
+                    Hyeju Jang, Yohan Jo, Qinlan Shen, Michael Miller, Seungwhan Moon, Carolyn Rose </br>
+                    ACL, 2016. </br>
+                    (
+                    <a class='link' href="https://www.aclweb.org/anthology/P/P16/P16-1021.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Jang+16')">BibTeX</a> )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link'>Cross Modal Content Based Objective for Learning Adequate Multimodal Representations</a></b> </br>
+                    Seungwhan Moon, Adhiguna Kuncoro, Akash Bharadwaj, Volkan Cirik, Chris Dyer, Louis-Philippe Morency </br>
+                    ICML MVRL Workshop, 2016. </br>
+                    (
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B16b.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+16b')">BibTeX</a>,
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B16b_slides.pdf">Slides</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://arxiv.org/abs/1412.3121">Multimodal Transfer Deep Learning with Applications in Audio-Visual Recognition</a></b> </br>
+                    Seungwhan Moon, Suyoun Kim, Haohan Wang </br>
+                    NIPS MMML Workshop, 2015. </br>
+                    (
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B15a_MMML_NIPS.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+15a')">BibTeX</a>,
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B15a_MMML_NIPS_poster.pdf">Poster</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://ieeexplore.ieee.org/document/7298927">Joint Photo Stream and Blog Post Summarization and Exploration</a></b> </br>
+                    Gunhee Kim, Seungwhan Moon, Leonid Sigal </br>
+                    CVPR, 2015. </br>
+                    (
+                    <a class='link' href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Kim_Joint_Photo_Stream_2015_CVPR_paper.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Kim+15a')">BibTeX</a>,
+                    <a class='link' href="http://vision.snu.ac.kr/~gunhee/r_blogstory.html">Extended Abstract</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://ieeexplore.ieee.org/document/7298810">Ranking and Retrieval of Image Sequences from Multiple Paragraph Queries</a></b> </br>
+                    Gunhee Kim, Seungwhan Moon, Leonid Sigal </br>
+                    CVPR, 2015. </br>
+                    (
+                    <a class='link' href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Kim_Ranking_and_Retrieval_2015_CVPR_paper.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Kim+15b')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://aclanthology.info/papers/W15-4650/w15-4650">Metaphor Detection in Discourse</a></b> </br>
+                    Hyeju Jang, Seunghwan Moon, Yohan Jo, Carolyn Rose </br>
+                    SIGDIAL, 2015. </br>
+                    (
+                    <a class='link' href="https://www.aclweb.org/anthology/W/W15/W15-4650.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Jang+15')">BibTeX</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7058048">Proactive Learning with Multiple Class-sensitive Labelers</a></b> </br>
+                    Seungwhan Moon, Jaime Carbonell </br>
+                    Proceedings of DSAA, 2014. </br>
+                    (
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B14c_DSAA.pdf">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+14c')">BibTeX</a>,
+                    <a class='link' href="https://s3.amazonaws.com/smoon-papers/Moon%2B14c_DSAA_slides.pdf">Slides</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.aclweb.org/anthology/W14-4103">Identifying Student Leaders from MOOC Discussion Forums through Language Influence</a></b> </br>
+                    Seungwhan Moon, Saloni Potdar, Lara Martin </br>
+                    Proceedings of EMNLP, 2014.</br>
+                    (
+                    <a class='link' href="https://goo.gl/4Q7WVu">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+14b')">BibTeX</a>,
+                    <a class='link' href="https://goo.gl/HNgC2k">Slides</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://dl.acm.org/citation.cfm?id=2580062">Active Learning with Partially Observed Data</a></b> </br>
+                    Seungwhan Moon, Calvin McCarter, Yu-Hsin Kuo</br>
+                    Proceedings of WWW, 2014.</br>
+                    (
+                    <a class='link' href="https://goo.gl/dn6gQl">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+14a')">BibTeX</a>,
+                    <a class='link' href="https://goo.gl/qFg5PL">Slides</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://dl.acm.org/citation.cfm?id=2388789">Design and Implementation of the Note-taking Style Haptic Voice Recognition</a></b> </br>
+                    Seungwhan Moon, Khe Chai Sim</br>
+                    Proceedings of ICMI, 2012.</br>
+                    (
+                    <a class='link' href="https://goo.gl/kazVVN">PDF</a>,
+                    <a class='link' href="javascript:open_bibtex('Moon+12b')">BibTeX</a>,
+                    <a class='link' href="https://goo.gl/cIsuXj">Slides</a>
+                    )
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link'>Application of Genetic Programming to Verilog Hardware Design</a></b> </br>
+                    Seungwhan Moon, Paul Booth, Jared Kirschner, Matt Belland</br>
+                    CCSCNE, 2012 (Best Paper Award). </br>
+                    (
+                    <a class='link' href="https://goo.gl/d0gjEq">Abstract</a>
+                    )
+                  </div>
+
+                </div>
+              </div>
+            </aside>
+          </div>
+
+
+
+          <!-- ========================== Start of Education ========================== -->
+
+          <div class="container_12" id='education'>
+            <div class="wrapper">
+              <article class="grid_12">
+                <div class="indent-left">
+                  <h3 style="margin-bottom: 10px; margin-top: 20px"> Education </h3>
+                </div>
+              </article>
+            </div>
+
+            <aside>
+              <div class="wrapper" style="margin-top: 10px">
+                <div class="indent-left">
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.cmu.edu/index.shtml">Carnegie Mellon University</a></b> (2013 - 2018)</br>
+                    Ph.D. </br>
+                    Language Technologies Institue, School of Computer Science</br>
+                    Pittsburgh, PA, USA
+                  </div>
+                  <div class='text-3'>
+                    <b><a class='link' href="https://www.olin.edu/">Olin College of Engineering</a></b> (2009 - 2013)</br>
+                    B.S., E:C</br>
+                    Needham, MA, USA
+                  </div>
+                  <div class='text-3'>
+                    <b><a class='link' href="https://english.minjok.hs.kr/contents/main.php">Korean Minjok Leadership Academy</a></b> (2006 - 2009)</br>
+                    Gangwon, South Korea
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+
+
+          <!-- ========================== Start of Awards and Honor ========================== -->
+
+          <div class="container_12" id='awards'>
+            <div class="wrapper">
+              <article class="grid_12">
+                <div class="indent-left">
+                  <h3 style="margin-bottom: 10px; margin-top: 20px"> Awards and Honors </h3>
+                </div>
+              </article>
+            </div>
+
+            <aside>
+              <div class="wrapper" style="margin-top: 10px">
+                <div class="indent-left">
+                  <div class='text-3'>
+                    <b><a class='link'>Hyundai Best Presenter Award</a></b> (2016)</br>
+                    Global Top Talent Forum by Hyundai Motors Group
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href='https://en.wikipedia.org/wiki/Samsung_Scholarship'>Samsung Fellowship</a></b> (2013 - 2018)</br>
+                    50,000 ($/Year) for 5 Years of Graduate Studies
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link'>LTI Graduate Research Fellowship</a></b> (2013 - 2018)</br>
+                    Full funding provided by Language Technologies Institute, CMU
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link'>Best Paper Award</a></b> (2012)</br>
+                    Undergraduate Research Competition at CCSCNE 2012
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link'>Olin Merit Full Scholarship</a></b> (2009 - 2013)</br>
+                    4 Year Full Tuition Scholarship (Undergraduate)
+                  </div>
+                  <!--
+                  <div class='text-3'>
+                    <b><a class='link'>Valedictorian</a></b> (2009)</br>
+                    Korean Minjok Leadership Academy
+                  </div>
+                  -->
+                  <div class='text-3'>
+                    <b><a class='link'>Presidential Scholarship</a></b> (2008)</br>
+                    Given by the President of South Korea for academic distinction
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link'>3rd Place Award</a></b> (2008)</br>
+                    In the 21st IYPT as a representative of the National Team of Korea
+                  </div>
+
+                </div>
+              </div>
+            </aside>
+
+          </div>
+
+
+          <!-- ========================== Start of Miscellaneous ========================== -->
+
+          <div class="container_12" id='miscellaneous'>
+            <div class="wrapper">
+              <article class="grid_12">
+                <div class="indent-left">
+                  <h3 style="margin-bottom: 10px; margin-top: 20px"> Miscellaneous </h3>
+                </div>
+              </article>
+            </div>
+
+            <aside>
+              <div class="wrapper" style="margin-top: 10px">
+                <div class="indent-left">
+                  <div class='text-3'>
+                    <b><a class='link' href="./archive.html">Engineering Projects (Archive)</a></b></br>
+                    <p style="font-size:16px;">
+                    Here is a link to some of my old research projects or projects that I worked on in the past.
+                    </p>
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="./music.html">Music Compositions</a></b></br>
+                    <p style="font-size:16px;">
+                    Music is a huge part of my life, and I enjoy both playing and composing music.
+                    </p>
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="https://wanderingmoons.studio/">Photography</a></b></br>
+                    <p style="font-size:16px;">
+                    I am also passionate about photography. Check out some of my photos here.
+                    </p>
+                  </div>
+
+                  <div class='text-3'>
+                    <b><a class='link' href="<%=galleries_path%>">Travel</a></b></br>
+                    <p style="font-size:16px;">
+                    Some of the places I visited, and some pictures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+
+          <div id="bibtex_dialog" title="Copy BibTex">
+            <pre id='bibtex_content' style='font-size: 12px;'></pre>
+          </div>
+
+          <div style='margin-top: 30px'>
+            <center><a class='link' href='#header'>Move to top</a></center>
+          </div>
+
+        </div>
+      <div class="block"></div>
+    </section>
+    </div>
+
+    <div style='margin-top: -30px; margin-bottom: 30px; font-size:12px;'>
+      <center></center>
+    </div>
+  </body>
+</html>
